@@ -1,0 +1,17 @@
+syntax = "proto3";
+package mail;
+option go_package = "./mail";
+
+message Message {
+    repeated string recipients = 1;
+    string subj = 2;
+    string text = 3;
+}
+
+message Success {
+    bool success = 1;
+}
+
+service MailService {
+    rpc SendMessage(Message) returns (Success) {}
+}
