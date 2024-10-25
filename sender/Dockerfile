@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM docker.io/golang:1.17-alpine
+FROM docker.io/golang:1.23-alpine
 WORKDIR /app
 COPY . ./
 RUN go build -o /sender
