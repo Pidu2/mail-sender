@@ -2,7 +2,7 @@ module github.com/Pidu2/anker/sender
 
 go 1.22.7
 
-toolchain go1.23.4
+toolchain go1.23.5
 
 require (
 	golang.org/x/net v0.34.0
